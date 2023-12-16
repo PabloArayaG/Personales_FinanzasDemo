@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page - Finanzas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Finanzas Personales</h1>
+
+        <div id="ingresos">
+            <h2>Ingresos</h2>
+            <input type="number" id="ingresosInput" placeholder="Ingrese el monto">
+            <button onclick="agregarIngreso()">Agregar</button>
+        </div>
+
+        <div id="gastos">
+            <h2>Gastos</h2>
+            <input type="number" id="gastosInput" placeholder="Ingrese el monto">
+            <button onclick="restarGasto()">Restar</button>
+        </div>
+
+        <div id="credito">
+            <h2>Crédito</h2>
+            <input type="number" id="creditoInput" placeholder="Ingrese el monto">
+            <button onclick="restarCredito()">Restar</button>
+        </div>
+
+        <div id="tienes">
+            <h2 style="color: rgb(25, 247, 0);">Tienes</h2>
+            <p id="tienesValor" style="color: rgb(25, 247, 0) ;">0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
